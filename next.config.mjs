@@ -12,7 +12,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/libsyn-podcast-search",
+  basePath: process.env.ENV === "local" ? "" : "/libsyn-podcast-search",
 
   /**
    * Disable server-based image optimization. Next.js does not support
