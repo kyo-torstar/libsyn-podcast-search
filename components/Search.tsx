@@ -8,8 +8,12 @@ import rssParser from './RssParser';
 const copyToClipboard = (value: string, id: any) => {
   navigator.clipboard.writeText(value);
   console.log('>>>>>>>> id, value', id, value)
-  document.getElementById(id).style.display = "inline-block";
-  setTimeout(() => document.getElementById(id).style.display = "none", 1000)
+  const textEle = document.getElementById(id)
+  if (textEle) {
+    textEle.style.display = "inline-block";
+    setTimeout(() => textEle.style.display = "none", 1000)
+  }
+
 };
 
 const DataRow = ({ data }: any) => {
