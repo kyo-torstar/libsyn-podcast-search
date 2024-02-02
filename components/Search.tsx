@@ -204,10 +204,7 @@ export default function Search() {
       }
 
       setLoading(true)
-      const r = searchFromCache(cache);
-      if (r.length > 0) {
-        setLoading(false)
-      }
+      searchFromCache(cache);
 
       const { data } = await axios.get(
         `${rssBaseUrl}/${selectRef.current?.value}`,
@@ -217,7 +214,7 @@ export default function Search() {
       searchFromCache(podcastData);
     } catch (e) {
       console.log('>>>>>>> err', e);
-      setResult([]);
+      alert('Error searching podcasts, please try again')
     } finally {
       setLoading(false)
     }
