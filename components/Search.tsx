@@ -124,6 +124,11 @@ const DataRow = ({ data }: any) => {
 const rssBaseUrl = 'https://feeds.libsyn.com';
 const showList = [
   {
+    id: 509703,
+    path: '/509703/rss',
+    name: 'Road Trip | Electric Avenues',
+  },
+  {
     id: 253478,
     path: '/253478/rss',
     name: 'This Matters',
