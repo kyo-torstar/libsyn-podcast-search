@@ -124,6 +124,11 @@ const DataRow = ({ data }: any) => {
 const rssBaseUrl = 'https://feeds.libsyn.com';
 const showList = [
   {
+    id: 413639,
+    path: '/413639/rss',
+    name: 'Suspicion: 40 Years Cold',
+  },
+  {
     id: 434994,
     path: '/434994/rss',
     name: 'Toronto Star Sound',
